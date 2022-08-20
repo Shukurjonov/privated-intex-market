@@ -98,7 +98,7 @@ const updateCategory = catchError(async (req, res, next) => {
       data: result
     })
   } else {
-    return res.status(500).send({
+    return res.status(404).send({
       message: 'Category not found'
     })
   }
